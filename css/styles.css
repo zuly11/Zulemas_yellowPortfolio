@@ -1,0 +1,254 @@
+
+
+
+/* Global styles
+------------------------------*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    color: #343434;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+img {
+    width: 200px;
+}
+a {
+    color:#FFE66D
+}
+
+a:hover {
+   text-decoration: none;
+}
+h1 {
+    font-size: 100px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 45px;
+}
+h1, h2 {
+    font-family:'Indie Flower';
+    font-weight: 400;
+
+}
+
+
+.card {
+    display:flex;
+    display: horizontal;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+}
+
+
+.container {
+    padding: 2px 16px;
+  }
+
+.content-wrap {
+   
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+h3 {
+    margin-bottom: 0;
+}
+.item-details h3 + p {
+    font-style: italic;
+}
+.item-details h3 ~ p {
+    margin: 0;
+}
+.divider > section {
+    border-bottom: 1px dashed #343434;
+    padding: 25px 0;
+}
+.divider > section:last-of-type {
+    border-bottom: none;
+}
+
+.icons {
+  width:100px;
+  height: 100px;
+}
+
+/* Profile section
+------------------------------*/
+header {
+/*    background: #2F3061;*/
+    background: #FFE66D;
+/*    color: #F7FFF7;*/
+
+}
+
+
+
+
+
+/* Projects
+------------------------------*/
+.projects {
+    background: #F7FFF7;
+}
+.projects a {
+  color: #2F3061;
+}
+.projects .btn {
+  color:#F7FFF7;
+  background: #74546a;
+  text-decoration: none;
+  /* makes the link look like a botton */
+  padding: 8px;
+  border-radius: 6px;
+  display: inline-block;
+}
+.projects .btn:hover {
+/*    background: rgba(47, 48, 97, 80%);*/
+    background: rgba(116, 84, 106, 80%);
+}
+.project-item {
+    overflow: hidden;
+}
+.project-item h3 {
+    margin-top: 0;
+}
+
+.my-picture {
+   border-radius: 150px
+}
+
+
+
+
+/* Work experience
+------------------------------*/
+.work-experience {
+/*    background: #A1C6D7;*/
+    background: #f67e7d;
+}
+
+
+
+
+
+
+/* Education
+------------------------------*/
+.education {
+    background-image: url(../images/whitebook.jpg);
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 100px;
+
+}
+.education p {
+    width:70%;
+}
+
+
+
+
+
+
+
+
+/* Contact Info
+------------------------------*/
+footer {
+/*    background: #343434;*/
+    background: #74546a;
+    color: #F7FFF7;
+
+}
+.contact-list {
+   list-style-type: none;
+    padding: 0;
+}
+.contact-list a {
+    padding: 15px;
+    display: inline-block;
+
+}
+.btf {
+  color:#F7FFF7;
+  background: #74546a;
+  text-decoration: none;
+  /* makes the link look like a botton */
+  padding: 8px;
+  border-radius: 6px;
+  display: inline-block;
+}
+.btf:hover {
+/*    background: rgba(47, 48, 97, 80%);*/
+    background: rgba(116, 84, 106, 80%);
+}
+
+
+/* Logo List
+------------------------------*/
+.resize {
+        width: 30px;
+        height:auto;
+    }
+    .logo-list {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+    }
+    .logo-list a {
+        padding: 15px;
+        display: inline-block;
+        border-radius: 1em 1em 1em 1em;
+    }
+
+
+/* Responsive
+------------------------------*/
+@media screen and (min-width:750px) {
+    header, footer {
+        text-align: center;
+    }
+    .project-item img {
+     float:left;
+     margin-right: 20px;
+ }
+    .job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+ }
+    .contact-list {
+        display: flex;
+        justify-content: center;
+
+    }
+
+}
+@media screen and (max-width:749px) {
+    h1 {
+        font-size: 75px;
+        line-height: 1.3;
+        margin-bottom: 20px;
+    }
+    h2 {
+        line-height: 1;
+    }
+    .contact-list a {
+        padding: 5px;
+    }
+}

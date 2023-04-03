@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background: url("images/pattern.png");
+}
+
+.main {
+    background: #ccc;
+    width: 400px;
+    height: 175px;
+    margin: 200px auto;
+    position: relative;
+    padding: 30px;
+    border-radius: 60px;
+    
+}
+
+.badge {
+    width: 105px;
+    background: #e66357;
+    color: white;
+    padding: 5px 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: -15px;
+    left: 37%;
+    border-radius: 15px;
+}
+
+.mode {
+    background: #EBEBEB;
+    width: 45px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    bottom: 30px;
+    left: 80%;
+}
+
+.clock {
+    background: #EBEBEB;
+    text-align: center;
+    font-size: 77px;
+    height: 100%;
+    padding-top: 10px; 
+    font-family: Big Shoulders Display;
+    border-radius: 4px;
+    
+        
+}
